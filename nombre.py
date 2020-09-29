@@ -1,7 +1,7 @@
-def printnumber () :
-    for i in range(999):
-        l = list(str(f'{i:03}'))
-        if l[0] != l[1] and l[1] != l[2] and l[2] != l[0] :
-            print(f'{i:03}')
-        
-printnumber()
+def print_number() -> None:
+        for i in range(8):
+            for j in range(i + 1, 9):
+                for k in range(j + 1, 10):
+                        print(f"{i}{j}{k}")
+
+print_number()
